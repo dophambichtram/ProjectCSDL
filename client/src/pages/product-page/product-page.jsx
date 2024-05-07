@@ -9,6 +9,7 @@ import Button from "../../components/common/button/button.jsx";
 import Productcard from "../../components/common/product-card/product-card.jsx";
 import Carousel from "react-multi-carousel";
 import Pagination from "@mui/material/Pagination";
+import PopUpChat from "../../components/common/PopUpChat.jsx";
 
 const ProductPage = () => {
   const [products, setProducts] = useState([]);
@@ -56,20 +57,6 @@ const ProductPage = () => {
       })
       .catch((error) => console.error("Error:", error));
   }, []);
-
-  //   useEffect(() => {
-  //     if (!searchTerm) {
-  //       setFilteredProducts(products);
-  //     } else {
-  //       const tempFilteredProducts = products.filter(
-  //         (product) =>
-  //           product &&
-  //           product.product_name &&
-  //           product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
-  //       );
-  //       setFilteredProducts(tempFilteredProducts);
-  //     }
-  //   }, [searchTerm, products]);
 
   const [inputValue, setInputValue] = useState("");
 
@@ -365,6 +352,7 @@ const ProductPage = () => {
             </div>
           </div>
         </div>
+        <PopUpChat />
       </div>
     </div>
   );

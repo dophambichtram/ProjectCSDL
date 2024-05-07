@@ -13,6 +13,7 @@ import Collection from "../../components/homepage/collection/collection.jsx";
 import Button from "../../components/common/button/button.jsx";
 import Productcard from "../../components/common/product-card/product-card.jsx";
 import Carousel from "react-multi-carousel";
+import PopUpChat from "../../components/common/PopUpChat.jsx";
 import "react-multi-carousel/lib/styles.css";
 const Homepage = () => {
   const [products, setProducts] = useState([]);
@@ -198,6 +199,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+        <PopUpChat />
       </div>
     </div>
   );

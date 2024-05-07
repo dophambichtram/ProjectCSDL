@@ -5,7 +5,7 @@ import dongFormatter from "../../utils/dongFormatter/dongFormatter.js";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-
+import PopUpChat from "../../components/common/PopUpChat.jsx";
 const initialValue = {
   cardNumber: "",
   name: "",
@@ -397,6 +397,7 @@ const PaymentPage = () => {
           </div>
         </div>
       </div>
+      <PopUpChat />
     </div>
   );
 };

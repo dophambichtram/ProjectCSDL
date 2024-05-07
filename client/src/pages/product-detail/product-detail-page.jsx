@@ -7,7 +7,7 @@ import ReviewSection from "../../components/product-detail/review-section/review
 import getProductByBrand from "../../utils/getProductByBrand/getProductByBrand.js";
 import ProductCard from "../../components/common/product-card/product-card";
 import Carousel from "react-multi-carousel";
-
+import PopUpChat from "../../components/common/PopUpChat.jsx";
 const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
@@ -183,6 +183,7 @@ const ProductDetailPage = () => {
           </Carousel>
         </div>
       </div>
+      <PopUpChat />
     </div>
   );
 };
